@@ -1,1 +1,7 @@
-/* Desenvolva sua estilização aqui ... */
+main{
+    gap: 2rem;
+}
+
+ul{
+    list-style-type:none;
+}

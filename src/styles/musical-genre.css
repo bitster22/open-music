@@ -1,0 +1,32 @@
+.musical-genre{
+    gap: var(--gap-1);
+}
+
+.musical-genre__filter{
+    gap: var(--gap-1);
+}
+
+.musical-genre__filter input[type="radio"] {
+    display: none;
+}
+
+.musical-genre__filter__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding-inline: 0.5rem;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-8);
+    border-color: var(--color-grey-8);
+    color: var(--color-grey-2);
+    font-size: var(--font-3);
+    font-weight: var(--medium-bold);
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label, .type-value:hover {
+    background-color: var(--color-grey-1);
+    border-color: var(--color-grey-1);
+    color: var(--color-grey-8);
+  }

@@ -1,0 +1,12 @@
+header{
+    margin-top: 1.875rem;
+}
+
+header button{
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: var(--radius-2);
+    border: none;
+    background-color: var(--color-grey-8);
+    cursor: pointer;
+}

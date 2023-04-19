@@ -1,15 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <script src="https://kit.fontawesome.com/df4648eec3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/flex.css">
+    <link rel="stylesheet" href="./src/styles/text.css">
+    <link rel="stylesheet" href="./src/styles/color.css">
+
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/musical-genre.css">
+    <link rel="stylesheet" href="./src/styles/price.css">
+    <link rel="stylesheet" href="./src/styles/albums.css">
     <title>Open Music</title>
   </head>
   <body>
-    <main></main>
+    <div class="container flex flex__dir-column">
+      <header class="flex flex__space-between">
+        <h1 class="font-1 color-grey-1">open music</h1>
+        <button><i class='fas fa-moon color-grey-2'></i></button>
+      </header>
+      <main class="flex flex__dir-column">
+        <section class="musical-genre flex flex__dir-column">
+          <h2 class="font-2 semi-bold">Gênero Musical</h2>
+
+          <div class="musical-genre__filter flex flex__wrap">
+          <input type="radio" checked name="genre" id="all">
+          <label class="musical-genre__filter__button" for="all">Todos</label>
+  
+          <input type="radio" name="genre" id="pop">
+          <label class="musical-genre__filter__button" for="pop">Pop</label>
+  
+          <input type="radio" name="genre" id="mpb">
+          <label class="musical-genre__filter__button" for="mpb">MPB</label>
+  
+          <input type="radio" name="genre" id="forro">
+          <label class="musical-genre__filter__button" for="forro">Forró</label>
+  
+          <input type="radio" name="genre" id="samba">
+          <label class="musical-genre__filter__button" for="samba">Samba</label>
+  
+          <input type="radio" name="genre" id="baiao">
+          <label class="musical-genre__filter__button" for="baiao">Baião</label>
+  
+          <input type="radio" name="genre" id="rap">
+          <label class="musical-genre__filter__button" for="rap">Rap</label>
+  
+          <input type="radio" name="genre" id="hip-hop">
+          <label class="musical-genre__filter__button" for="hip-hop">Hip-Hop</label>
+  
+          <input type="radio" name="genre" id="rock">
+          <label class="musical-genre__filter__button" for="rock">Rock</label>
+  
+          <input type="radio" name="genre" id="reggae">
+          <label class="musical-genre__filter__button" for="reggae">Reagge</label>
+  
+          <input type="radio" name="genre" id="country">
+          <label class="musical-genre__filter__button" for="country">Country</label>
+  
+          <input type="radio" name="genre" id="gospel">
+          <label class="musical-genre__filter__button" for="gospel">Gospel</label>
+          </div>
+        </section>
+  
+        <section class="price flex flex__dir-column">
+          <div class="flex flex__space-between">
+            <h2 class="font-2 semi-bold">Definir preço</h2>
+            <span class="font-2 medium-bold">Até R$ 240</span>
+          </div>
+          <input type="range" name="" id="" value="0">
+        </section>
+  
+        <section class="albums flex flex__dir-column">
+          <h2>Albums encontrados</h2>
+          <ul class="albums__list flex flex__space-between flex__wrap">
+            <li class="albums__list__component bg-grey-2">
+              <div class="albums__list__component__image"></div>
+              <div class="albums__list__component__content flex flex__dir-column flex__space-between">
+                <div class="albums__list__component__content__album-info medium-bold color-grey-2 flex">
+                  <span>Scalene</span>
+                  <span>2017</span>
+                </div>
+                <span class="semi-bold color-grey-1">Magnetite</span>
+                <div class="albums__list__component__content__buy flex flex__space-between">
+                  <span class="font-3 medium-bold color-grey-1">R$ 70.00</span>
+                  <button class="albums__list__component__content__buy__button font-3 color-grey-2">Comprar</button>
+                </div>
+              </div>
+            </li>
+            <li class="albums__list__component bg-grey-2">
+              <div class="albums__list__component__image"></div>
+              <div class="albums__list__component__content flex flex__dir-column flex__space-between">
+                <div class="albums__list__component__content__album-info medium-bold color-grey-2 flex">
+                  <span>Scalene</span>
+                  <span>2017</span>
+                </div>
+                <span class="semi-bold color-grey-1">Magnetite</span>
+                <div class="albums__list__component__content__buy flex flex__space-between">
+                  <span class="font-3 medium-bold color-grey-1">R$ 70.00</span>
+                  <button class="albums__list__component__content__buy__button font-3 color-grey-2">Comprar</button>
+                </div>
+              </div>
+            </li>
+            <li class="albums__list__component bg-grey-2">
+              <div class="albums__list__component__image"></div>
+              <div class="albums__list__component__content flex flex__dir-column flex__space-between">
+                <div class="albums__list__component__content__album-info medium-bold color-grey-2 flex">
+                  <span>Scalene</span>
+                  <span>2017</span>
+                </div>
+                <span class="semi-bold color-grey-1">Magnetite</span>
+                <div class="albums__list__component__content__buy flex flex__space-between">
+                  <span class="font-3 medium-bold color-grey-1">R$ 70.00</span>
+                  <button class="albums__list__component__content__buy__button font-3 color-grey-2">Comprar</button>
+                </div>
+              </div>
+            </li>
+            <li class="albums__list__component bg-grey-2">
+              <div class="albums__list__component__image"></div>
+              <div class="albums__list__component__content flex flex__dir-column flex__space-between">
+                <div class="albums__list__component__content__album-info medium-bold color-grey-2 flex">
+                  <span>Scalene</span>
+                  <span>2017</span>
+                </div>
+                <span class="semi-bold color-grey-1">Magnetite</span>
+                <div class="albums__list__component__content__buy flex flex__space-between">
+                  <span class="font-3 medium-bold color-grey-1 semi-bold">R$ 70.00</span>
+                  <button class="albums__list__component__content__buy__button font-3 color-grey-2 medium-bold">Comprar</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
     <script src="./src/scripts/theme.js"></script>
     <script src="./src/scripts/productsData.js"></script>
     <script src="./src/scripts/index.js"></script>

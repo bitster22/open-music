@@ -1,0 +1,40 @@
+.albums{
+    gap: var(--gap-1);
+}
+
+.albums__list{
+    gap: var(--gap-1);
+}
+
+.albums__list__component{
+    width: 19.25rem;
+    height: 16.188rem;
+    border-radius: var(--radius-1);
+}
+
+.albums__list__component__image{
+    height: 7.063rem;
+    background: url(../assets/img/1.jpg);
+    background-size: contain;
+    border-radius: var(--radius-1) var(--radius-1) 0 0;
+}
+.albums__list__component__content{
+    height: 9.125rem;
+    background: var(--color-grey-8);
+    border-radius: 0 0 var(--radius-1) var(--radius-1);
+    padding: 1.25rem 1rem;
+}
+
+.albums__list__component__content__album-info{
+    gap: var(--gap-1);
+    font-size: 0.75rem;
+}
+
+.albums__list__component__content__buy__button{
+    height: 2rem;
+    padding-inline: 0.5rem;
+    background-color: var(--color-grey-7);
+    border: none;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.font-1{
+    font-size: var(--font-1);
+    font-weight: var(--semi-bold);
+}
+.font-2{
+    font-size: var(--font-2);
+}
+.font-3{
+    font-size: var(--font-3);
+    font-weight: var(--medium-bold);
+}
+
+.medium-bold{
+    font-weight: var(--medium-bold);
+}
+.semi-bold{
+    font-weight: var(--semi-bold);
+}
