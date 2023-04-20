@@ -7,6 +7,7 @@ const render = (array) =>{
         const listElement = createCard(element);
         mainList.appendChild(listElement);
     })
+    
 }
 
 const createCard = ({title, category, price, img, band, year, id}) =>{
@@ -34,10 +35,10 @@ const createCard = ({title, category, price, img, band, year, id}) =>{
 
     divBandInfo.classList.add("albums__list__component__content__album-info", "medium-bold", "color-grey-2", "flex");
 
-    titleMusic.classList.add("semi-bold", "color-grey-1");
+    titleMusic.classList.add("albums__list__component__content__title","semi-bold", "color-grey-1");
 
     divBuyContainer.classList.add("albums__list__component__content__buy", "flex", "flex__space-between");
-    spanPrice.classList.add("font-3", "medium-bold", "color-grey-1");
+    spanPrice.classList.add("albums__list__component__content__buy__value","font-3", "medium-bold", "color-grey-1");
     buttonBuy.classList.add("albums__list__component__content__buy__button", "font-3", "color-grey-2");
 
     divImage.style.backgroundImage = `url(${img})`
@@ -62,5 +63,3 @@ const createCard = ({title, category, price, img, band, year, id}) =>{
 
     return listCard;
 }
-
-renderDarkMode();

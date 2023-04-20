@@ -26,8 +26,17 @@ const filterByRange = (array) =>{
                 return music;
             }
         })
-        console.log(priceFilter);
         render(priceFilter);
+    })
+}
+
+const filterGenres = () =>{
+    const radioFilter = document.querySelectorAll(".musical-genre__filter__value");
+
+    radioFilter.forEach(filter =>{
+        filter.addEventListener("click",()=>{
+            filterGenre(products, filter.value);
+        })
     })
 }
 

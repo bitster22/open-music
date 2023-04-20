@@ -5,3 +5,7 @@ main{
 ul{
     list-style-type:none;
 }
+
+.variant-white{
+    color: #F8F9FA;
+}
