@@ -1,5 +1,5 @@
 /* Desenvolva sua lógica aqui ... */
-const filterTypes = () =>{
+const filterGenres = () =>{
     const radioFilter = document.querySelectorAll(".musical-genre__filter__value");
 
     radioFilter.forEach(filter =>{
@@ -11,4 +11,5 @@ const filterTypes = () =>{
 }
 
 render(products);
-filterTypes();
+filterByRange(products);
+filterGenres();

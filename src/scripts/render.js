@@ -7,7 +7,6 @@ const render = (array) =>{
         const listElement = createCard(element);
         mainList.appendChild(listElement);
     })
-    priceFilterRange(array);
 }
 
 const createCard = ({title, category, price, img, band, year, id}) =>{
@@ -62,46 +61,4 @@ const createCard = ({title, category, price, img, band, year, id}) =>{
     listCard.append(divImage, divMusicContainer);
 
     return listCard;
-}
-
-const updateValue = (currentPrice) =>{
-    const priceFilter = document.querySelector("#filter-price");
-
-    priceFilter.innerHTML = Number(currentPrice).toFixed(2).toString().replace(".",",");
-}
-
-const getHighValue = (array) =>{
-    let max = 0;
-
-    array.forEach((element)=>{
-        if(element.price > max){
-            max = element.price;
-        }
-    })
-    return max;
-}
-
-const priceFilterRange = (array) =>{
-    const rangeFilter = document.querySelector(".price__filter__range");
-
-    rangeFilter.max = getHighValue(array);
-    rangeFilter.value = rangeFilter.max;
-    updateValue(rangeFilter.value);
-
-    rangeFilter.addEventListener("mousemove",()=>{
-        updateValue(rangeFilter.value);
-    })
-}
-
-const filterGenre = (array, genreChoice) =>{
-    if(genreChoice!="Todos"){
-        const filteredElements = array.filter((genre)=>{
-            if(categories[genre.category]==genreChoice){
-                return genre;
-            }
-        })
-        render(filteredElements);
-    }else{
-        render(products);
-    }
 }
