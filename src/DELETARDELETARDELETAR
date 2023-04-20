@@ -1,0 +1,22 @@
+<li class="albums__list__component">
+  <div class="albums__list__component__image"></div>
+  <div
+    class="albums__list__component__content flex flex__dir-column flex__space-between"
+  >
+    <div
+      class="albums__list__component__content__album-info medium-bold color-grey-2 flex"
+    >
+      <span>Scalene</span>
+      <span>2017</span>
+    </div>
+    <h2 class="semi-bold color-grey-1">Magnetite</h2>
+    <div class="albums__list__component__content__buy flex flex__space-between">
+      <span class="font-3 medium-bold color-grey-1">R$ 70.00</span>
+      <button
+        class="albums__list__component__content__buy__button font-3 color-grey-2"
+      >
+        Comprar
+      </button>
+    </div>
+  </div>
+</li>
