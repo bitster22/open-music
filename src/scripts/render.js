@@ -92,3 +92,16 @@ const priceFilterRange = (array) =>{
         updateValue(rangeFilter.value);
     })
 }
+
+const filterGenre = (array, genreChoice) =>{
+    if(genreChoice!="Todos"){
+        const filteredElements = array.filter((genre)=>{
+            if(categories[genre.category]==genreChoice){
+                return genre;
+            }
+        })
+        render(filteredElements);
+    }else{
+        render(products);
+    }
+}

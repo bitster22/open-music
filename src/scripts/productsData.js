@@ -1,4 +1,4 @@
-export const products = [
+const products = [
   {
     title: "Magnetite",
     category: 8,
