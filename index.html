@@ -20,67 +20,67 @@
   <body>
     <div class="container flex flex__dir-column">
       <header class="flex flex__space-between">
-        <h1 class="font-1 color-grey-1">open music</h1>
-        <button><i class='fas fa-moon color-grey-2'></i></button>
+        <h1 id="main-title" class="font-1">open music</h1>
+        <button id="dark-mode-button"><i class='fas fa-moon'></i></button>
       </header>
       <main class="flex flex__dir-column">
         <section class="musical-genre flex flex__dir-column">
-          <h2 class="font-2 semi-bold">Gênero Musical</h2>
+          <h2 class="musical-genre__title font-2 semi-bold">Gênero Musical</h2>
 
           <div class="musical-genre__filter flex flex__wrap">
-          <input class="musical-genre__filter__value" type="radio" checked name="genre" id="all" value="Todos">
+          <input class="musical-genre__filter__value radio--light" type="radio" checked name="genre" id="all" value="Todos">
           <label class="musical-genre__filter__button" for="all">Todos</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="pop" value="Pop">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="pop" value="Pop">
           <label class="musical-genre__filter__button" for="pop">Pop</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="mpb" value="MPB">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="mpb" value="MPB">
           <label class="musical-genre__filter__button" for="mpb">MPB</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="forro" value="Forró">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="forro" value="Forró">
           <label class="musical-genre__filter__button" for="forro">Forró</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="samba" value="Samba">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="samba" value="Samba">
           <label class="musical-genre__filter__button" for="samba">Samba</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="baiao" value="Baião">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="baiao" value="Baião">
           <label class="musical-genre__filter__button" for="baiao">Baião</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="rap" value="Rap">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="rap" value="Rap">
           <label class="musical-genre__filter__button" for="rap">Rap</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="hip-hop" value="Hip-Hop">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="hip-hop" value="Hip-Hop">
           <label class="musical-genre__filter__button" for="hip-hop">Hip-Hop</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="rock" value="Rock">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="rock" value="Rock">
           <label class="musical-genre__filter__button" for="rock">Rock</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="reggae" value="Reggae">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="reggae" value="Reggae">
           <label class="musical-genre__filter__button" for="reggae">Reagge</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="country" value="Country">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="country" value="Country">
           <label class="musical-genre__filter__button" for="country">Country</label>
   
-          <input class="musical-genre__filter__value" type="radio" name="genre" id="gospel" value="Gospel">
+          <input class="musical-genre__filter__value radio--light" type="radio" name="genre" id="gospel" value="Gospel">
           <label class="musical-genre__filter__button" for="gospel">Gospel</label>
           </div>
         </section>
   
         <section class="price flex flex__dir-column">
           <div class="flex flex__space-between">
-            <h2 class="font-2 semi-bold">Definir preço</h2>
-            <span class="font-2 medium-bold">Até R$ <span id="filter-price">240,00</span></span>
+            <h2 class="price__title font-2 semi-bold">Definir preço</h2>
+            <span class="price__max-amount font-2 medium-bold">Até R$ <span id="filter-price">240,00</span></span>
           </div>
           <input class="price__filter__range" type="range" name="" id="" value="0">
         </section>
   
         <section class="albums flex flex__dir-column">
-          <h2>Albums encontrados</h2>
+          <h2 class="albums__title font-2 semi-bold">Albums encontrados</h2>
           <ul class="albums__list flex flex__space-between flex__wrap">
             <li class="albums__list__component bg-grey-2">
               <div class="albums__list__component__image"></div>
               <div class="albums__list__component__content flex flex__dir-column flex__space-between">
-                <div class="albums__list__component__content__album-info medium-bold color-grey-2 flex">
+                <div class="albums__list__component__content__album-info medium-bold flex">
                   <span>Scalene</span>
                   <span>2017</span>
                 </div>

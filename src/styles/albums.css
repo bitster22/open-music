@@ -2,6 +2,10 @@
     gap: var(--gap-1);
 }
 
+.albums__title{
+    color: var(--color-grey-1);
+}
+
 .albums__list{
     gap: var(--gap-1);
 }
@@ -14,7 +18,7 @@
 
 .albums__list__component__image{
     height: 7.063rem;
-    background: url(../assets/img/1.jpg);
+    background: var(--color-grey-3);
     background-size: contain;
     border-radius: var(--radius-1) var(--radius-1) 0 0;
 }
@@ -28,6 +32,7 @@
 .albums__list__component__content__album-info{
     gap: var(--gap-1);
     font-size: 0.75rem;
+    color: var(--color-grey-2);
 }
 
 .albums__list__component__content__buy__button{

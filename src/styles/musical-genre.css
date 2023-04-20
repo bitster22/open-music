@@ -1,3 +1,7 @@
+.musical-genre__title{
+    color: var(--color-grey-1);
+}
+
 .musical-genre{
     gap: var(--gap-1);
 }
@@ -10,7 +14,7 @@
     display: none;
 }
 
-.musical-genre__filter__button{
+label{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +29,20 @@
     cursor: pointer;
 }
 
-input[type="radio"]:checked+label, .type-value:hover {
+.label--dark{
+    background-color: var(--color-grey-1);
+    border-color: var(--color-grey-1);
+    color: var(--color-grey-3);
+}
+
+.radio--light:checked+label{
     background-color: var(--color-grey-1);
     border-color: var(--color-grey-1);
     color: var(--color-grey-8);
   }
+
+.radio--dark:checked+label{
+    background-color: var(--color-grey-2);
+    border-color: var(--color-grey-9);
+    color: var(--color-grey-9);
+}

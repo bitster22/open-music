@@ -20,3 +20,16 @@
     </div>
   </div>
 </li>
+
+body light mode = bg-grey-9
+body dark mode = bg-grey-0
+
+header button dark mode = bg-grey-1 fa-sun color-grey-3
+
+button dark mode = bg-grey-2
+
+.albums__list__component__content dark mode = bg-grey-1
+
+.musical-genre__filter__button = bg-grey-1 border-grey-1
+
+input[type="radio"]:checked+label, .type-value:hover = 

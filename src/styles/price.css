@@ -1,3 +1,11 @@
 .price{
     gap: var(--gap-1);
 }
+
+.price__title{
+    color: var(--color-grey-1);
+}
+
+.price__max-amount{
+    color: var(--color-grey-2);
+}

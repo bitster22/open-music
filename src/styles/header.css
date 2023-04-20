@@ -8,5 +8,15 @@ header button{
     border-radius: var(--radius-2);
     border: none;
     background-color: var(--color-grey-8);
+    color: var(--color-grey-2);
     cursor: pointer;
+}
+
+.header__button--dark{
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-3);
+}
+
+h1{
+    color: var(--color-grey-1);
 }

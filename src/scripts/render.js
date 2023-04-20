@@ -62,3 +62,5 @@ const createCard = ({title, category, price, img, band, year, id}) =>{
 
     return listCard;
 }
+
+renderDarkMode();

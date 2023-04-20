@@ -13,6 +13,9 @@
 .bg-grey-8{
     background-color: var(--color-grey-8);
 }
+.bg-grey-9{
+    background-color: var(--color-grey-9);
+}
 
 .color-grey-1{
     color: var(--color-grey-1);
