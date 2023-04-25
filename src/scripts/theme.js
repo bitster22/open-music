@@ -11,8 +11,6 @@ const renderDarkMode = () =>{
 
     const themePreference = JSON.parse(localStorage.getItem("dark__mode"));
 
-    console.log(albumPrice)
-
     if(themePreference){
         darkIcon.classList.remove("fa-moon");
         darkIcon.classList.add("fa-sun");

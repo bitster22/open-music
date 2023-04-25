@@ -29,6 +29,10 @@
     padding: 1.25rem 1rem;
 }
 
+.albums__list__component__content:hover{
+    background-color: var(--color-grey-6);
+}
+
 .albums__list__component__content__album-info{
     gap: var(--gap-1);
     font-size: 0.75rem;
